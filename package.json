@@ -1,0 +1,29 @@
+{
+  "name": "gestor-pedidos",
+  "version": "1.0.0",
+  "description": "Gestor de pedidos para e-commerce",
+  "main": "electron/main.js",
+  "scripts": {
+    "electron": "electron .",
+    "electron:build": "electron-builder build --win"
+  },
+  "build": {
+    "appId": "com.ecommerce.gestor-pedidos",
+    "productName": "Gestor de Pedidos",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "electron/**/*",
+      "client/build/**/*"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "electron/icon.ico"
+    }
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.0"
+  }
+}
