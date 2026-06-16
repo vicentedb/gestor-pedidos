@@ -8,10 +8,6 @@ function formatMoneda(val, moneda = 'EUR') {
   return new Intl.NumberFormat('es-ES', { style: 'currency', currency: moneda }).format(val || 0);
 }
 
-function formatFecha(str) {
-  if (!str) return '—';
-  return new Date(str).toLocaleDateString('es-ES', { day: '2-digit', month: '2-digit', year: 'numeric' });
-}
 
 export default function Estadisticas() {
   const [pedidos, setPedidos] = useState([]);

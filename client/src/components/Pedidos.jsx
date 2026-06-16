@@ -29,7 +29,6 @@ export default function Pedidos() {
   const [estadoEditar, setEstadoEditar] = useState('');
   const [notaEditar, setNotaEditar] = useState('');
   const [config, setConfig] = useState(null);
-  const [modoManual, setModoManual] = useState(false);
   const [modalNuevo, setModalNuevo] = useState(false);
   const [nuevoPedido, setNuevoPedido] = useState({
     numero: '', cliente: '', email: '', producto: '',
